@@ -1,0 +1,52 @@
+body {
+  background-color: aliceblue;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.apply-lone {
+  margin: auto;
+  width: 100%;
+
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .apply-lone {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .apply-lone {
+    width: 50%;
+  }
+}
+
+/* Two-column layout for second page */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-row .col {
+  flex: 1;
+  min-width: 48%;
+}
+
+@media (max-width: 768px) {
+  .form-row .col {
+    min-width: 100%;
+  }
+}
+
+.invalid-feedback {
+  display: block;
+}
