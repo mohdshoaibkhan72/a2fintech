@@ -11,36 +11,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         padding: 20px;
         margin: 0;
       }
+
       .container {
         background-color: #ffffff;
         padding: 40px;
         border-radius: 12px;
         box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
         max-width: 700px;
+        width: 100%;
         text-align: center;
       }
+
       h1 {
         color: #d63031;
         font-size: 32px;
         margin-bottom: 20px;
       }
+
       p {
         font-size: 18px;
         color: #2d3436;
         margin: 15px 0;
       }
+
       .highlight {
         color: #d63031;
         font-weight: bold;
       }
+
       .line {
         border-top: 1px dashed #d63031;
         margin: 25px 0;
       }
+
       .warning {
         background-color: #ffe6e6;
         padding: 15px;
@@ -50,10 +57,35 @@
         font-weight: bold;
         margin-top: 30px;
       }
+
       .footer-note {
         font-size: 14px;
         color: #636e72;
         margin-top: 20px;
+      }
+
+      /* Responsive Styling */
+      @media (max-width: 600px) {
+        .container {
+          padding: 25px 20px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .warning {
+          font-size: 15px;
+          padding: 12px;
+        }
+
+        .footer-note {
+          font-size: 13px;
+        }
       }
     </style>
   </head>
@@ -71,9 +103,9 @@
       <div class="line"></div>
       <p>
         I have
-        <span class="highlight"
-          >legal documents, offer letter, work records, and address proof</span
-        >
+        <span class="highlight">
+          legal documents, offer letter, work records, and address proof
+        </span>
         of the company and employer.
       </p>
       <p>
